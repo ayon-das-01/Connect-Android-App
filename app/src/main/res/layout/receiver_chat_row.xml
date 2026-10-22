@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    app:cardBackgroundColor="@color/black"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="?android:attr/selectableItemBackground">
+
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="17dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_bg"
+            android:text=""
+            android:maxWidth="300dp"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/receiverImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/receiverImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/name" />
+
+        <ImageView
+            android:id="@+id/receiverImageView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:maxHeight="300dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_border"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/receiverImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <FrameLayout
+
+            android:id="@+id/receiverVideoContainer"
+
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+            android:layout_marginStart="5dp"
+
+            android:visibility="gone"
+
+            app:layout_constraintStart_toEndOf="@id/receiverImage"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <!-- VIDEO THUMBNAIL -->
+
+            <ImageView
+
+                android:id="@+id/receiverVideoThumbnail"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="20dp"
+
+                android:contentDescription="Video thumbnail" />
+
+
+            <!-- PLAY BUTTON -->
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_gravity="center"
+
+                android:gravity="center"
+
+                android:text="▶"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+
+                android:background="@drawable/video_play_circle"
+
+                android:clickable="false"
+                android:focusable="false" />
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

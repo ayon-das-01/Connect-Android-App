@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MyMenu">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/addContactsId"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/addfrndicon">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/chatsId"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/chaticon">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/myStatusId"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/account">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/menu">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sinOutId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:paddingLeft="65dp"
+        android:paddingTop="8dp"
+        android:text="Sign out"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/settingId"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/black"
+        android:paddingLeft="65dp"
+        android:paddingTop="6dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/signOutId"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="1dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/sign_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/settingsId"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:src="@drawable/setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878">
+
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    app:cardBackgroundColor="@color/black"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <!-- TEXT MESSAGE -->
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="17dp"
+            android:background="@drawable/rounded_bg"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/senderImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <!-- SENDER IMAGE / PROFILE -->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/senderImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/name" />
+
+
+        <!-- SENDER IMAGE MESSAGE -->
+
+        <ImageView
+            android:id="@+id/senderImageView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:maxHeight="300dp"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitEnd"
+            android:background="@drawable/rounded_border"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/senderImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <!-- SENDER VIDEO -->
+
+        <FrameLayout
+
+            android:id="@+id/senderVideoContainer"
+
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+            android:layout_marginEnd="5dp"
+
+            android:visibility="gone"
+
+            app:layout_constraintEnd_toStartOf="@id/senderImage"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <!-- VIDEO THUMBNAIL -->
+
+            <ImageView
+
+                android:id="@+id/senderVideoThumbnail"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="20dp"
+
+                android:contentDescription="Video thumbnail" />
+
+
+            <!-- PLAY BUTTON -->
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_gravity="center"
+
+                android:gravity="center"
+
+                android:text="▶"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+
+                android:background="@drawable/video_play_circle"
+
+                android:clickable="false"
+                android:focusable="false" />
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

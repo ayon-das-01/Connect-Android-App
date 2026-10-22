@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:id="@+id/tvNoChats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No chats yet"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tvNoChats2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start a conversation by adding a contact."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/addContactsId"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/addfrndicon">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/chatsId"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/chaticon">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/myStatusId"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/account">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@drawable/menu">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
